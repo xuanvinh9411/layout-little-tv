@@ -1,0 +1,360 @@
+#header .dropdown-menu a,
+#header1 a,
+#header1 .dropdown-menu
+{
+	color:#f04e23;
+	
+}
+#header .dropdown-menu:active,
+#header a,
+#header1 .dropdown-menu:active,
+#header1 a,
+#upload-video a
+{
+    text-decoration: none;
+}
+#header1 .dropdown-menu
+{
+	text-transform: none;
+	font-weight:none; 
+}
+.ip-search{
+	font-weight: normal;
+	width: 400px;
+	height: 29px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+
+}
+.btn-search{
+	border: 0px;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin-bottom:1px;
+}
+#header1
+{
+    padding:18px 0px;
+}
+
+ /*---scrollbar---*/
+.scrollbar{
+    float: left;
+    height: 530px;
+    overflow-y: auto;
+}
+.scrollbar::-webkit-scrollbar {
+    width: 6px;
+} 
+.scrollbar::-webkit-scrollbar-thumb{
+	background-color: #95a5a6;
+} 
+#footer{
+	margin-top: 50px;
+}
+#cmt,
+#cmt .img-circle
+{
+	 border: 1px solid #95a5a6;
+}
+.Acoin
+{
+      transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.ip-cmt,
+.ip-tl-cmt
+{
+	border: 1px solid #b7b7b7;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+.ip-cmt
+{
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+.ip-tl-cmt
+{
+    height: 24px;
+    border-radius: 15px;
+}
+#cmt button
+{
+	border: 1px solid #f04e23;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+/*---end scrollbar---*/
+
+/*blog cá nhân*/
+.span-theo-doi
+{
+    border-left:1px solid #959595;
+}
+.blog
+{
+    position: relative;
+}
+.avata
+{
+    position: absolute;
+    bottom: 10px;
+}
+.name,
+.age,
+.id
+{
+    text-shadow: 10px 10px 10px #131313;
+}
+/*end blog cá nhân*/
+
+/*report*/
+.ip-date
+{
+    border: 1px solid #959595;
+}
+.ip-date input
+{
+    border: 0px;
+}
+.table-report td,
+.table-report th
+{
+    border: 1px solid #959595 ;
+}
+.text-report
+{
+    max-width: 800px;
+}
+/*end report*/
+
+
+/*popup*/
+#popup input
+{
+    border: 1px solid #959595;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+#account .panel
+{
+    margin-top: 150px;
+    margin-left: 90px;
+    float: center;
+    width: 700px;
+    height: 360px;
+    background-image:url("../img/background/BGpopup-dang-ky.png");
+    background-repeat: no-repeat;
+}
+#log-in .panel
+{
+    margin-top: 150px;
+    margin-left: 90px;
+    float: center;
+    width: 700px;
+    height: 360px;
+    background-image:url("../img/background/BGpopup-dang-nhap.png");
+    background-repeat: no-repeat;
+}
+#upload-video .panel
+{
+    margin-top: 150px;
+    margin-left: 90px;
+    float: center;
+    width: 700px;
+    height: 360px;
+    background-image:url("../img/background/BGpopup-tai-video.png");
+    background-repeat: no-repeat;
+}
+.btn-around
+{
+    text-align: left;
+    width: 100%;
+    border: 1px solid #959595;
+    background-color: #0d7747;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+.btn-dang-nhap
+{
+    width: 100%;
+}
+.input-log-in
+{
+     text-align: left;
+     border: 1px solid #959595;
+     margin-top: 10px;
+}
+.img-around
+{
+    border-right: 1px solid #959595;
+    width: auto;
+    height: 25px;
+    border-radius: 5px;
+}
+.popup-dang-nhap p
+{
+     position: relative;
+    text-align: center;
+}
+.popup-dang-nhap span
+{
+    position: absolute;
+    top:6px;
+}   
+.quen-mat-khau
+{
+ padding-right: 50px;
+}
+/*end popup*/
+/*.btn-tl-cmt
+{
+    padding: 2px 12px;
+}*/
+.btn-cmt
+{
+    padding: 4px 22px;
+    margin-top: 6px;
+}
+.div-upload-video
+{
+    position: relative;
+}
+.div-upload-video span
+{
+    position:absolute;
+    top:10px;
+    margin-left: 5px;
+}
+.quoc-gia,
+#upload-video .dropdown
+{
+    border: 1px solid #959595;
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    width: 150px;
+    min-width: 50px;
+}
+/*Tìm kiếm video khác*/
+.div-search-video-khac
+{
+    position: relative;
+}
+
+.btn-search-video-khac
+{
+    position: absolute;
+    padding: 2px 10px;
+    right: 5px;
+
+}
+.ip-search-video-khac
+{
+    margin-right: 40px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 26px;
+}
+.row-like-love-acoin
+{
+    position: relative;
+}
+.div-like-love-acoin
+{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+/*end Tìm kiếm video khác*/
+@media only screen and (min-width: 1200px)
+{
+    .scrollbar
+    {
+        height: 530px;
+    }
+    #header .div-avata-tt
+    {
+        width: 8.33333333%;
+      margin-left: 39.33333333%;
+    }
+    #header .div-tt-ca-nhan .dropdown 
+    {
+        position: absolute;
+        left:0px;
+        top: 10px;
+    }
+    #header .div-tt-ca-nhan
+    {
+        position: relative;
+        width: 10.66666667%;
+    }
+    #header .div-ngon-ngu
+    {
+        margin-top: 10px;
+        width: 8.33333333%;
+    }
+    #header .div-login-acount
+    {
+        margin-top: 10px;
+        width: 16.66666667%;
+    }
+    .div-logo
+    {
+         width: 16.66666667%;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px)
+{
+    .scrollbar{
+        height: 440px;
+    }
+     #header .div-avata-tt
+    {
+        width: 8.33333333%;
+      margin-left: 39.33333333%;
+    }
+    #header .div-tt-ca-nhan .dropdown 
+    {
+        position: absolute;
+        left:0px;
+        top: 10px;
+    }
+    #header .div-tt-ca-nhan
+    {
+        position: relative;
+        width: 10.66666667%;
+    }
+    #header .div-ngon-ngu
+    {
+        margin-top: 10px;
+        width: 8.33333333%;
+    }
+    #header .div-login-acount
+    {
+        margin-top: 10px;
+        width: 16.66666667%;
+    }
+    .div-logo
+    {
+         width: 16.66666667%;
+    }
+}

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Little TV</title>
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+      <link rel="stylesheet" type="text/css" href="css/formatbootstrap.css">
+      <link rel="stylesheet" href="css/little.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   </head>
+   <body>
+      <div id="header" class="little-bg-orange little-cl-white text-right ">
+         <div class="container" >
+            <div class="row little-pdtb5 ">
+               <div class="col-lg-2 col-md-2  div-logo">
+                   <a href="index.html"><img src="img/icon/logo-little-tv.png" align="left" width="101px" height="42px" alt=""></a>  
+               </div>
+               <div class="col-lg-1 col-lg-offset-4 col-md-1 col-md-offset-4 div-avata-tt">
+                  <a href=""><img src="img/icon/anh-dai-dien.jpg" align="right" class="img-responsive img-circle" alt=""></a>
+               </div>
+               <div class="col-lg-2 col-md-2 div-tt-ca-nhan">
+                   <div class="dropdown ">
+                     <a data-toggle="dropdown" class="little-cl-white little-hover-greyish little-fs12 " href="#">Phạm Trương<span class="caret"></span></a>
+                     <ul class="dropdown-menu  " role="menu" aria-labelledby="dLabel"  class="little-fs12">
+                        <li><a href="thong-tin.html">Thông Tin Cá Nhân</a></li>
+                        <li><a href="user.html">Trang Cá Nhân</a></li>
+                        <li><a href="yeu-thich.html">Video Yêu Thích</a></li>
+                        <li><a href="#">Sử Dụng Acoin</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-1 col-lg-1 div-ngon-ngu">
+                  <div class="dropdown ">
+                     <a class="little-cl-white little-fs12 little-hover-greyish " data-toggle="dropdown" href="">Ngôn Ngữ<span class="caret"></span></a>
+                     <ul class="dropdown-menu ">
+                        <li><a class=" little-fs14" href="#">Việt Nam</a></li>
+                        <li><a class=" little-fs14" href="#">USA</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-2 col-lg-2 div-login-acount text-right">
+                  <p class="little-fs12 little-hover-greyish little-pdl5 ">
+                     <a class="little-cl-white" data-toggle="modal" data-target="#account" href="">Đăng Ký</a>
+                     <span> / </span>
+                     <a class="little-cl-white" data-toggle="modal" data-target="#log-in" href="">Đăng Nhập</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="header1">
+         <div class="container little-fs14">
+            <div class="row little-cl-orange little-text-font">
+               <div class="col-lg-2 col-md-2 little-pdt5">
+                  <div class="dropdown ">
+                     <a data-toggle="dropdown" class="little-cl-orange"  href="#">
+                        <img src="img/icon/lien-he.png" alt="">
+                     </a>
+                     <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+                        <li><a href="">Liên Hệ</a></li>
+                        <li><a href="">Liên Hệ</a></li>
+                        <li><a href="">Liên Hệ</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-2 little-pdt5 div-upload-video little-hover-grey">
+                  <a href="" data-toggle="modal" data-target="#upload-video" class="">
+                     <img src="img/icon/up-video.png" alt="">
+                     <span class="">Đăng Video</span>
+                  </a>
+               </div>
+               <div class="col-lg-6 col-lg-offset-2 col-md-7 col-md-offset-1 text-right">
+                  <input type="text" class="ip-search little-pdl15 little-cl-grey little-fs12 little-border-orange" 
+                  placeholder="Nhập từ khóa tìm kiếm ...">
+                  <button type="submit" class="btn  btn-search little-mgl10 little-bg-orange little-hover-greyish little-cl-white little-fs12">Tìm Kiếm</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- popup  -->
+      <div id="popup">
+         <div class="container">
+            <div class="row">
+               <div class="modal fade" id="account" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"  aria-hidden="true" >
+                  <div class="modal-dialog modal-lg">
+                     <div class="">
+                        <div class="panel " >
+                           <div class="panel-heading" role="tab" id="headingOne">
+                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <p class="text-center little-fs20 little-pdt30 little-font">ĐĂNG KÝ TÀI KHOẢN</p>
+                           </div>
+                           <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="">
+                                 <div class="col-md-8 col-lg-8 col-md-push-2 col-lg-push-2">
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">HỌ VÀ TÊN:</p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0">
+                                       <p class=""><input type="text" class="little-fs16 little-pdl5" name="ten-dang-nhap"></p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">MẬT KHẨU: </p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0">
+                                       <p class=""><input type="text" class="little-fs16 little-pdl5" name="mat-khau"></p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">NHẬP LẠI MẬT KHẨU: </p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0">
+                                       <p class=""><input type="text" class="little-fs16 little-pdl5" name="nhap-lai-mat-khau"></p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">EMAIL:</p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0">
+                                       <p class=""><input type="text" class="little-fs16 little-pdl5" placeholder="...@gmail.com" name="email"></p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">SỐ ĐIỆN THOẠI: </p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0">
+                                       <p class=" "><input type="text" class="little-fs16 little-pdl5" name="so-dien-thoai"></p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">NGÀY SINH:</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 little-pdlr0">
+                                       <p class=""><input type="date" class="little-fs14 little-pdl5"  name="ngay-sinh"></p>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 little-pdt10">
+                                       <p  class="text-center">
+                                          <button type="button" class="btn text-right little-cl-white little-bg-orange little-font ">Đăng Ký</button>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"  aria-hidden="true" >
+                  <div class="modal-dialog modal-lg">
+                     <div class="">
+                        <div class="panel " >
+                           <div class="panel-heading" role="tab" id="headingOne">
+                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <p class="text-center little-fs20 little-pdt30 little-font">ĐĂNG KÝ TÀI KHOẢN</p>
+                           </div>
+                           <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="row">
+                                 <div class="input-log-in little-pdtb20 little-pdb10 col-md-8 col-lg-8 col-md-push-2 col-lg-push-2">
+                                    <div class="col-md-5 col-lg-5 little-pdt20">
+                                       <p class="little-font ">SỐ ĐIỆN THOẠI: </p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0 little-pdt20">
+                                       <p class=""><input type="text" class="little-fs16 little-pdl5" name="ten-dang-nhap"></p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                       <p class="little-font ">MẬT KHẨU: </p>
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 little-pdlr0">
+                                       <p class=""><input type="text" class="little-fs16 little-pdl5" name="mat-khau"></p>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 text-right ">
+                                       <span class=" little-fs10 little-pdr5">
+                                          <a  data-toggle="modal" data-target="#account" data-dismiss="modal"  href="">Đăng ký</a>
+                                       </span>
+                                       <span class=" quen-mat-khau little-fs10">
+                                          <a href="">Quên mật khẩu</a>
+                                       </span>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 little-pdt10 ">
+                                          <button type="button" class="btn btn-dang-nhap little-fs12 little-cl-white little-bg-orange ">Đăng Nhập</button>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 little-pdt10 ">
+                                          <button type="button"  class="little-pdlr0 btn-around little-fs12  little-cl-white ">
+                                             <img src="img/icon/logo-around.png" class="img-around" alt="">
+                                             <span class="span-around little-pdl15"> Đăng Nhập Bằng Around </span>
+                                          </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="modal fade" id="upload-video" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"  aria-hidden="true" >
+                  <div class="modal-dialog modal-lg">
+                     <div class="">
+                        <div class="panel " >
+                           <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="row">
+                                 <div class="col-md-12 col-lg-12 little-pdr30">
+                                    <button type="button" class="close little-mgt5" data-dismiss="modal">
+                                       <span aria-hidden="true">&times;</span>
+                                       <span class="sr-only">Close</span>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="row ">
+                                 <div class="col-lg-12 col-md-12"><p class="text-center little-fs20 little-font">ĐĂNG VIDEO</p></div>
+                                 <div class="  little-pdb10 col-md-7 col-lg-7 col-md-push-3 col-lg-push-3">
+                                    <div class="col-md-6 col-lg-5 little-pdt20">
+                                       <p class="little-font little-pdl20 ">Quốc Gia: </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-7 little-pdlr0 little-pdt20">
+                                       <p class="little-cl-grey little-fs16 little-pdl5 quoc-gia">Việt Nam</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                       <p class="little-font little-mgb0 little-pdl20 little-mgt10">Thành Phố: </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-7 little-pdlr0 ">
+                                       <p>
+                                       <div class="dropdown ">
+                                          <a class=" little-pdtb5 little-pdlr5" data-toggle="dropdown" href="">Hồ Chí Minh<span class="caret"></span></a>
+                                          <ul class="dropdown-menu ">
+                                             <li><a class=" little-fs14" href="#">Hà Nội</a></li>
+                                             <li><a class=" little-fs14" href="#">Hải Phòng</a></li>
+                                          </ul>
+                                       </div>
+                                       </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                       <p class="little-font little-mgb0 little-pdl20 little-mgt10">Quận Huyện: </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-7 little-pdlr0">
+                                       <p>
+                                       <div class="dropdown ">
+                                          <a class="little-pdtb5 little-pdlr5" data-toggle="dropdown" href="">Quận 7<span class="caret"></span></a>
+                                          <ul class="dropdown-menu ">
+                                             <li><a class=" little-fs14" href="#">Gò Vấp</a></li>
+                                             <li><a class=" little-fs14" href="#">Bình Thạnh</a></li>
+                                          </ul>
+                                       </div>
+                                       </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                       <p class="little-font little-mgb0 little-pdl20 little-mgt10">Phường Xã: </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-7 little-pdlr0">
+                                       <p>
+                                       <div class="dropdown ">
+                                          <a class="little-pdtb5 little-pdlr5" data-toggle="dropdown" href="">Phường 25<span class="caret"></span></a>
+                                          <ul class="dropdown-menu ">
+                                             <li><a class=" little-fs14" href="#">Phường 24</a></li>
+                                             <li><a class=" little-fs14" href="#">Phường 23</a></li>
+                                          </ul>
+                                       </div>
+                                       </p>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                       <input type="file" class="little-fs12 little-mgl20" name="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 col-lg-12  ">
+                                       <p  class="text-center little-mgt10 ">
+                                          <button type="button" class="btn little-pdlr30  little-cl-white little-bg-orange little-font ">Tải Lên</button>
+                                       </p>
+                                    </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end popup  -->
+      <hr class="little-mgtb0">
+      <div id="blog">
+         <div class="container">
+               <div class="row">
+                  <div class="blog little-pdt20">
+                        <img src="img/blog/cover.png" width="100%" height="auto"  alt="">
+                     <div class="avata">
+                        <div class="row little-cl-white">
+                              <div class="col-lg-4 col-md-4">
+                                 <div class="col-lg-6 col-md-6">
+                                    <img src="img/blog/avata.jpg" class="img-responsive"  alt="">
+                                 </div>
+                                 <div class="col-lg-6 col-md-6 div-tt-user little-pdlr0">
+                                    <p class=" little-pdt30 name little-mgb0 little-fs20 little-font"> 
+                                       <span class="">PHAM TRUONG</span>
+                                    </p>
+                                    <p class=" little-fs18 age little-mgb5  little-font"> 
+                                       <span class="">29/06/1994</span>
+                                    </p>
+                                    <p class="id"> 
+                                       <span class="">ID:1546</span>
+                                    </p>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>   
+               </div>
+               <div class="row little-pdtb5">
+                  <div class="  text-right little-pdr30">
+                     <button class=" little-fs16 little-font" >Đã Theo Dõi 
+                        <span class="span-theo-doi little-pdl10"><i class="fa fa-times " aria-hidden="true"></i></span>
+                     </button> 
+                     <p class="text-right little-cl-grey little-pdt5 little-fs12">Theo dõi:1245</p>
+                  </div>
+                  
+               </div>              
+               <div class="row">
+                  <div class="col-lg-8 col-md-8 little-pdt20">
+                        <a href=""><p class="little-font little-fs20">VIDEO MỚI NHẤT</p></a>
+                        <a href="chi-tiet-video.html">
+                           <img src="img/bai-viet/text.jpg" class="img-responsive " alt="" class="img-responsive">
+                        </a>
+                        <div class="little-font">
+                           <p class="little-mgtb5">
+                              <a href="chi-tiet-video.html" title="ĐI SĂN CÁ KHỔNG LỒ - BÌNH CHÁNH"><span class="little-fs22 little-format-text1"> ĐI SĂN CÁ KHỔNG LỒ - BÌNH CHÁNH</span></a>
+                           </p>
+                           <div class="row little-fs12">
+                              <div class="col-md-3 col-lg-3">
+                                 <p class="little-mgb0"><a href="user.html">PHAM TRUONG</a></p>
+                                 <p class="little-mgb0">VIEW: 12345678</p>
+                              </div>
+                              <div class="col-md-2 col-lg-2  ">
+                                 <p class="little-mgt5 little-mgb0">LIKE: 456789</p>
+                                 <p class="little-mgt5 little-mgb0">TIPS: 34567</p>
+                              </div>
+                           </div>
+                           <div class="row little-fs12 row-like-love-acoin">
+                              <div class="col-md-3 col-lg-3 ">
+                                 <p class=" little-mgt5">NGÀY ĐĂNG: 16/11/2016</p>
+                              </div>
+                              <div class="col-md-2 col-lg-2  ">
+                                 <p class="little-mgt5"><a href="dia-phuong.html">BÌNH CHÁNH</a></p>
+                              </div>
+                              <div class="col-md-4 col-lg-4 ">
+                                 <p class="text-center little-mgt0">
+                                    <span class="little-mglr5">SHARE</span>:
+                                    <span><i class="fa fa-facebook little-pdlr5 little-fs20" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-twitter little-pdlr5 little-fs20" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-google-plus little-pdlr5 little-fs20" aria-hidden="true"></i></span>
+                                 </p>
+                              </div>
+                              <div class="col-md-3 col-lg-3 div-like-love-acoin little-fs30">
+                                 <span><i class="fa fa-thumbs-o-up little-pdlr10" aria-hidden="true"></i></span>
+                                 <span><i class="fa fa-heart little-pdlr10" aria-hidden="true"></i></span>
+                                 <span><i class="fa fa-stop-circle-o Acoin little-pdlr10" aria-hidden="true"></i></span>
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 little-pdt20">
+                     <a href=""><p class="little-font little-fs20 little-mgb0">VIDEO XEM NHIỀU NHẤT</p></a>
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 little-pdt10">
+                           <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                           <p class="little-text-font little-format-text little-height25em little-line14em" >
+                              <a href="chi-tiet-video.html " title="HOTGIRL M">HOTGIRL M</a>
+                           </p>
+                           <div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey"> 
+                                 <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 little-pdt10">
+                           <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                           <p class="little-text-font little-format-text little-height25em little-line14em" >
+                              <a href="chi-tiet-video.html " title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                           </p>
+                           <div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">
+                                 <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">Le Thien THIEN BINH</a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           </div>
+                        </div> 
+                        <div class="col-lg-6 col-md-6 little-pdt10">
+                           <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                           <p class="little-text-font little-format-text little-height25em little-line14em" >
+                              <a href="chi-tiet-video.html " title="HOTGIRL M">HOTGIRL M</a>
+                           </p>
+                           <div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey"> 
+                                 <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 little-pdt10">
+                           <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                           <p class="little-text-font little-format-text little-height25em little-line14em" >
+                              <a href="chi-tiet-video.html " title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                           </p>
+                           <div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey"> 
+                                 <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           </div>
+                        </div> 
+                        <div class="col-lg-6 col-md-6 little-pdt10">
+                           <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                           <p class="little-text-font little-format-text little-height25em little-line14em" >
+                              <a href="chi-tiet-video.html " title="HOTGIRL M">HOTGIRL M</a>
+                           </p>
+                           <div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey"> 
+                                 <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 little-pdt10">
+                           <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                           <p class="little-text-font little-format-text little-height25em little-line14em" >
+                              <a href="chi-tiet-video.html " title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                           </p>
+                           <div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey"> 
+                                 <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                              <div class="col-lg-6 col-md-6 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           </div>
+                        </div> 
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12 col-md-12"><hr></div>
+               </div>
+               <div class="row">
+                  <p class="little-font little-fs20 little-mgb0 little-pdl10">VIDEO ĐÃ TẢI LÊN</p>
+                  <div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">Nguyen THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>   
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">NGuyen THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 little-pdt10">
+                        <a href="chi-tiet-video.html"><img src="img/bai-viet/text.jpg" class="img-responsive" alt=""></a>
+                        <p class="little-text-font little-line14em little-format-text little-height25em">
+                           <a href="chi-tiet-video.html" title="HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH">HOTGIRL Một mình chống chọi với côn đồ -BÌNH CHÁNH</a>
+                        </p>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1 little-pdr5" href="user.html" title="THIEN BINH">Nguyen  THIEN BINH</a>
+                           </div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">VIEW: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">20/10/2017</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Like:123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">Tips: 123456</div>
+                           <div class="col-lg-4 col-md-4 little-fs10 little-pdlr0 little-cl-grey">
+                              <a class="little-cl-grey little-hover-black little-format-text1" href="dia-phuong.html" title="Bình Chánh">Bình Chánh</a>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <div id="footer" class="little-bg-orange little-cl-white" >
+         <div class="little-pdt20">
+            <div class="container">
+               <p class="little-text-font little-fs20">LIÊN HỆ</p>
+               <p> 
+                  <span class="glyphicon glyphicon-earphone ">
+                  </span>
+                  <span>(083)620 7712 - (083)620 8727 - 093 884 0336</span>  
+               </p>
+               <p > 
+                  <span class="glyphicon glyphicon-envelope">                        
+                  </span>
+                  <span>
+                  support@littletv.vn
+                  </span>
+               </p>
+               <p >
+                  <span class="glyphicon glyphicon-map-marker">
+                  </span> 
+                  <span>
+                  littleworld technology and media JSC
+                  </span>
+               <p >
+                  195/1B,Tôn Thất Thyết, p.13,Q.4,TP.HCM
+               </p>
+               <p >
+                  Văn phòng dự án littleTV 307 Lê Văn Lương
+               </p>
+               <p >
+                  P.Tân Quy,Quận 7,TP.Hồ Chí Minh
+               </p>
+            </div>
+         </div>
+         <hr>
+         <div class="footer little-pdb10">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 col-md-4">
+                     <p class="little-fs16"><span class="glyphicon"></span> &copy;2017-LittleTV.All Rights Reserved.</p>
+                  </div>
+                  <div class="col-lg-8 col-md-8  little-fs30">
+                     <p class="text-right">               
+                        <a href="https://www.facebook.com/" class="little-cl-white little-hover-greyish">
+                           <i class="fa fa-facebook little-pdlr20" aria-hidden="true"></i>
+                        </a> 
+                        <a href="https://twitter.com" class="little-cl-white little-hover-greyish">
+                           <i class="fa fa-twitter little-pdlr20" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" class="little-cl-white little-hover-greyish">
+                           <i class="fa fa-youtube-square little-pdlr20" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.google.com.vn" class="little-cl-white little-hover-greyish">
+                           <i class="fa fa-google-plus little-pdlr20" aria-hidden="true"></i>
+                        </a>                
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="bootstrap/js/jquery.min.js" ></script>
+      <script src="bootstrap/js/bootstrap.min.js" ></script>
+   </body>
+</html>

@@ -1,0 +1,1033 @@
+#header .dropdown-menu a,
+#header1 a,
+#header1 .dropdown-menu
+{
+	color:#f04e23;
+	
+}
+#header .dropdown-menu:active,
+#header a,
+#header1 .dropdown-menu:active,
+#header1 a
+{
+    text-decoration: none;
+}
+#video-dia-diem .dropdown-menu,
+#video-dia-diem li
+{
+	min-width: 30px;
+	
+}
+#header .dropdown-menu
+{
+	min-width: 30px;
+}
+#header
+{
+	position: relative;
+}
+#header .dropdown
+{
+	float: right;
+}
+/*comment*/
+
+
+.div-cmt input,
+.div-reply-cmt input
+{
+	 border: 1px solid #f04e23;
+    -moz-border-radius: 1.250rem;
+    -webkit-border-radius: 1.250rem;
+    -ms-border-radius: 1.250rem;
+    -o-border-radius: 1.250rem;
+    border-radius: 1.250rem;
+}
+.div-cmt img,
+.div-reply-cmt img
+{
+
+	border: 1px solid #95a5a6;
+}
+.div-img-reply-cmt,
+.div-img-cmt
+{
+	float: left;
+}
+.ip-cmt,
+.ip-repply-cmt
+{
+	width: 100%;
+}
+/*end comment*/
+/*form upload img*/
+.form-upload-img
+{
+	border: 1px solid #bdc3c7;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+  
+}
+
+/*end form upload img*/
+
+/*blog*/
+.blog
+{
+	position: relative;
+}
+.avata
+{
+	position: absolute;
+}
+
+/*end blog*/
+.div-tt-user
+{
+	position: relative;
+}
+.tt-user
+{
+	position: absolute;
+	left: 0px;
+}
+.ip-search
+{
+	color:  #959595;
+	border: 1px solid #f04e23;
+	font-weight: normal;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+.btn-search
+{
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.div-cmt,
+.reply-cmt
+{
+	margin-top: 5px;
+}
+.btn-tl-cmt
+{
+	padding: 1px 15px;
+}
+.btn-cmt
+{
+	padding: 4px 25px;
+}
+/*format input dang nhap*/
+#acount,
+#log-in
+{
+	padding: 50px 0px;
+}
+#acount input,
+#log-in input
+{
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: 2px solid #f04e23 ;
+	padding-bottom: 3px;
+	width: 60%
+}
+#upload-video
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+.div-dang-nhap
+{
+	position: relative;
+}
+.btn-dang-nhap span
+{
+	position: absolute;
+	top:6px;
+}
+/*end format input dang nhap*/
+/*-------------------lớn -----------------*/
+@media only screen and (max-width: 1200px) and (min-width: 992px)
+{
+		body{
+			max-width: 992px;
+			margin-right: auto;
+  			margin-left: auto;
+		}
+		/*header*/
+		.logo-little
+		{
+			width: 100%;
+			height: auto;
+			padding-top:10px;
+			padding-bottom: 10px;
+
+		}
+		.div-avata
+		{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		/*end header*/
+		/* đăng nhập */
+		.btn-around
+		{
+		    border: 1px solid #959595;
+		    background-color: #0d7747;
+		    /*padding: 2px 25px 2px 0rem;*/
+		    padding: 2px 0px;
+		    width: 60%;
+		}
+		.btn-around span
+		{
+			padding-top: 6px;
+		}
+		.btn-around img
+		{
+		    width: 25px; 
+		    height: 25px;
+		    margin-left: 3px;
+		}
+		.btn-dang-nhap
+		{
+			/*padding:5px 63px;*/
+			width: 60%;
+			padding: 7px 0px;
+		}
+		/*end đăng nhập*/
+		/*upload video*/
+		#upload-video
+		{
+			width: 35%;
+			padding: 50px 0px;
+		}
+		#upload-video .dropdown
+		{
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding: 3px 5px 3px 5px;
+		}
+		#upload-video ul
+		{
+			min-width: 50px;
+		}
+		.ip-tap-tin
+		{
+			width: 100%;
+			border: 1px solid #959595;
+			border-radius: 5px;
+		}
+		.btn-tai-len
+		{
+			width: 100%;
+		}
+		/*end upload video*/
+}
+@media only screen and (max-width: 992px) and (min-width: 768px)
+{
+		html{
+				font-size: 16px;
+			}
+
+	.around .coppy
+	{
+		text-align: left;
+	}
+	.around .logo
+	{
+		text-align: right;
+	}
+	.div-img-cmt,
+	.div-cmt img
+	{
+		width: 42px;
+		height: 42px;
+	}
+	.div-img-reply-cmt,
+	.div-img-reply-cmt img
+	{
+		width: 35px;
+		height: 35px;
+	}
+	.ip-repply-cmt
+	{
+		padding-top: 0.125rem;
+		padding-bottom: 0.125rem;
+	}
+	/*search*/
+	.tt-search
+	{
+		margin-top: 45%;
+	}	
+	/*end search*/
+/*	#video-2-ct .tt-chi-tiet-tin
+	{
+		margin-top: 5%;
+	}*/
+	.div-anh-dai-dien
+	{
+		padding-top: 40px;
+	}
+	.div-anh-bia
+	{
+		padding-top: 60px;
+	}
+	/*avata*/
+		.avata
+		{
+			bottom: 10px;
+			left: 10px;
+		}
+		.div-name
+		{
+			padding-top: 3.125rem;
+		}
+	/*end avata*/
+	/*header*/
+	.logo-little
+	{
+		width: 100%;
+		height: auto;
+		padding-top:10px;
+		padding-bottom: 10px;
+
+	}
+	.div-avata
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.div-user
+	{
+		margin-top:10px;
+	}
+	.div-login-acuont
+	{
+		text-align: left;
+	}
+	/*end-heaer*/
+
+
+	/*header1*/
+		.ip-search
+		{
+			width: 65%;
+			height: 20px;
+			margin-right: 5px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.btn-search
+		{
+			padding: 2px 10px;
+		}
+	/*end header1*/
+	/* đăng nhập */
+		.btn-around
+		{
+		    border: 1px solid #959595;
+		    background-color: #0d7747;
+		    /*padding: 2px 25px 2px 0rem;*/
+		    padding: 2px 0px;
+		    width: 60%;
+		}
+		.btn-around span
+		{
+			padding-top: 6px;
+		}
+		.btn-around img
+		{
+		    width: 25px; 
+		    height: 25px;
+		    margin-left: 3px;
+		}
+		.btn-dang-nhap
+		{
+			/*padding:5px 63px;*/
+			width: 60%;
+			padding: 7px 0px;
+		}
+		/*end đăng nhập*/
+		/*upload video*/
+		#upload-video
+		{
+			width: 35%;
+			padding: 50px 0px;
+		}
+		#upload-video .dropdown
+		{
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding: 3px 5px 3px 5px;
+		}
+		#upload-video ul
+		{
+			min-width: 50px;
+		}
+		.ip-tap-tin
+		{
+			width: 100%;
+			border: 1px solid #959595;
+			border-radius: 5px;
+		}
+		.btn-tai-len
+		{
+			width: 100%;
+		}
+		/*end upload video*/
+}
+/*-------------------end lớn-----------------*/
+
+
+
+
+/*-------------------điện thoại -----------------*/
+@media only screen and (max-width:767px) and (min-width: 300px)
+{
+		html{
+				font-size: 14px;
+			}
+	.up-video
+	{
+		display: none;	
+	}
+	
+	.around .coppy,
+	.around .logo
+	{
+		text-align: center;
+	}
+	/*header*/
+	.div-avata
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.div-login-acount
+	{
+		text-align: right;
+	}
+	/*end-heaer*/
+	
+}
+/*-------------------end điện thoại-----------------*/
+
+
+
+
+/*-------------------lớn -----------------*/
+@media only screen and (max-width: 767px) and (min-width: 550px)
+{
+		html{
+				font-size: 15px;
+			}
+		.div-img-cmt
+		{
+			width: 8.33333333%;
+		}
+		.div-img-cmt,
+		.div-cmt img
+		{
+			width: 42px;
+			height: 42px;
+		}
+		.div-img-reply-cmt,
+		.div-img-reply-cmt img
+		{
+			width: 35px;
+			height: 35px;
+		}
+		.ip-repply-cmt
+		{
+			padding-top: 0.125rem;
+			padding-bottom: 0.125rem;
+		}
+		/*#video-2-ct .tt-chi-tiet-tin
+		{
+			margin-top: 15%;
+		}*/
+		/*avata*/
+		.avata
+		{
+			bottom: 10px;
+			left: 10px;
+		}
+		.div-name
+		{
+			padding-top: 3.125rem;
+		}
+		/*end avata*/
+		/*#account .col-xs-5
+		{
+			padding-left: 5%;
+		}
+		#log-in .col-xs-5
+		{
+			padding-left: 8%;
+		}*/
+		/*header*/
+		.logo-little
+		{
+			
+			width: 70%;
+			padding-top: 5px;
+		}
+		.div-logo
+		{
+			text-align: center;
+		}
+		.div-ngon-ngu
+		{
+			position: relative;
+		}
+
+		.div-ngon-ngu .dropdown
+		{
+			width: 50%;
+			position: absolute;
+			margin-left: 25%;
+
+		}
+		/*end herder*/
+
+
+		/*header1*/
+		.ip-search
+		{
+			width: 65%;
+			height: 20px;
+			margin-right: 5px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.btn-search
+		{
+			padding: 2px 10px;
+		}
+		/*end header1*/
+		/*header1*/
+		.ip-search
+		{
+			width: 65%;
+			height: 20px;
+			margin-right: 5px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.btn-search
+		{
+			padding: 2px 10px;
+		}
+		/*end header1*/
+		/* đăng nhập */
+		.btn-around
+		{
+		    border: 1px solid #959595;
+		    background-color: #0d7747;
+		    /*padding: 2px 25px 2px 0rem;*/
+		    padding: 2px 0px;
+		    width: 60%;
+		}
+		.btn-around img
+		{
+		    width: 25px; 
+		    height: 25px;
+		    margin-left: 5px;
+		}
+		.btn-dang-nhap
+		{
+			/*padding:5px 63px;*/
+			width: 60%;
+			padding: 7px 0px;
+		}
+		/*end đăng nhập*/
+		/*upload video*/
+		#upload-video
+		{
+			width: 45%;
+			padding: 50px 0px;
+		}
+		#upload-video .dropdown
+		{
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding: 3px 5px 3px 5px;
+		}
+		#upload-video ul
+		{
+			min-width: 50px;
+		}
+		.ip-tap-tin
+		{
+			width: 100%;
+			border: 1px solid #959595;
+			border-radius: 5px;
+		}
+		.btn-tai-len
+		{
+			width: 100%;
+		}
+		/*end upload video*/
+		
+}
+/*-------------------end lớn-----------------*/
+
+
+
+
+
+/*-------------------vừa -----------------*/
+@media only screen and (max-width: 550px) and (min-width: 450px)
+{
+		html{
+				font-size: 14px;
+			}
+		.div-img-cmt,
+		.div-cmt img
+		{
+			width: 42px;
+			height: 42px;
+		}
+		.div-img-reply-cmt,
+		.div-img-reply-cmt img
+		{
+			width: 35px;
+			height: 35px;
+		}
+		.ip-repply-cmt
+		{
+			padding-top: 0.125rem;
+			padding-bottom: 0.125rem;
+		}
+	/*	#video-2-ct .tt-chi-tiet-tin
+		{
+			margin-top: 10%;
+		}*/
+		/*avata*/
+		.avata
+		{
+			bottom: 8px;
+			left: 8px;
+		}
+		.div-name
+		{
+			padding-top: 1.875rem;
+		}
+		/*end avata*/
+		#log-in .col-xs-5
+		{
+			padding-left: 10%;
+		}
+		/*header*/
+		.logo-little
+		{
+			
+			width: 80%;
+			padding-top: 5px;
+		}
+		.div-logo
+		{
+			text-align: center;
+		}
+		.div-ngon-ngu
+		{
+			position: relative;
+		}
+
+		.div-ngon-ngu .dropdown
+		{
+			width: 50%;
+			position: absolute;
+			margin-left: 25%;
+
+		}
+		/*end herder*/
+
+
+		/*header1*/
+		.ip-search
+		{
+			width: 65%;
+			height: 20px;
+			margin-right: 5px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.btn-search
+		{
+			padding: 2px 10px;
+		}
+		/*end header1*/
+		/* đăng nhập */
+		.btn-around
+		{
+		    border: 1px solid #959595;
+		    background-color: #0d7747;
+		    /*padding: 2px 25px 2px 0rem;*/
+		    padding: 2px 0px;
+		    width: 60%;
+		}
+		.btn-around img
+		{
+		    width: 25px; 
+		    height: 25px;
+		    margin-left: 5px;
+		}
+		.btn-dang-nhap
+		{
+			/*padding:5px 63px;*/
+			width: 60%;
+			padding: 7px 0px;
+		}
+		/*end đăng nhập*/
+		/*upload video*/
+		#upload-video
+		{
+			width: 60%;
+			padding: 50px 0px;
+		}
+		#upload-video .dropdown
+		{
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding: 3px 5px 3px 5px;
+		}
+		#upload-video ul
+		{
+			min-width: 50px;
+		}
+		.ip-tap-tin
+		{
+			width: 100%;
+			border: 1px solid #959595;
+			border-radius: 5px;
+		}
+		.btn-tai-len
+		{
+			width: 100%;
+		}
+		/*end upload video*/
+		
+}
+/*-------------------end vừa-----------------*/
+
+
+
+
+/*-------------------trung bình -----------------*/
+@media only screen and (max-width: 450px) and (min-width: 350px)
+{
+		html{
+				font-size: 13px;
+			}
+		.div-img-cmt,
+		.div-cmt img
+		{
+			width: 42px;
+			height: 42px;
+		}
+		.div-img-reply-cmt,
+		.div-img-reply-cmt img
+		{
+			width: 35px;
+			height: 35px;
+		}
+		.ip-repply-cmt
+		{
+			padding-top: 0.125rem;
+			padding-bottom: 0.125rem;
+		}
+	/*	#video-2-ct .tt-chi-tiet-tin
+		{
+			margin-top: 5%;
+		}*/
+		/*avata*/
+		.avata
+		{
+			bottom: 7px;
+			left: 7px;
+		}
+		.div-name
+		{
+			padding-top: 1.250rem;
+		}
+		/*end avata*/
+		#log-in .col-xs-5
+		{
+			padding-left: 10%;
+		}
+		/*header*/
+		.logo-little
+		{
+			
+			width: 80%;
+			padding-top: 5px;
+		}
+		.div-logo
+		{
+			text-align: center;
+		}
+		.div-ngon-ngu
+		{
+			position: relative;
+		}
+
+
+		.div-ngon-ngu .dropdown
+		{
+			width: 100%;
+			position: absolute;
+		}
+		#header .div-tt-user
+		{
+			width: 30.33333333%;
+		}
+		#header .div-ngon-ngu
+		{
+			padding-left: 0px;
+			padding-right: 0px;
+			width: 21.66666667%;
+		}
+		#header .div-login-acount
+		{
+			width: 39.66666667%;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		/*end herder*/
+
+		/*header1*/
+		.ip-search
+		{
+			width: 65%;
+			height: 20px;
+			margin-right: 5px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.btn-search
+		{
+			padding: 2px 10px;
+		}
+		/*end header1*/
+		/* đăng nhập */
+		.btn-around
+		{
+		    border: 1px solid #959595;
+		    background-color: #0d7747;
+		    /*padding: 2px 25px 2px 0rem;*/
+		    padding: 2px 0px;
+		    width: 60%;
+		}
+		.btn-around img
+		{
+		    width: 25px; 
+		    height: 25px;
+		    margin-left: 5px;
+		}
+		.btn-dang-nhap
+		{
+			/*padding:5px 63px;*/
+			width: 60%;
+			padding: 7px 0px;
+		}
+		/*end đăng nhập*/
+		/*upload video*/
+		#upload-video
+		{
+			width: 70%;
+			padding: 50px 0px;
+		}
+		#upload-video .dropdown
+		{
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding: 3px 5px 3px 5px;
+		}
+		#upload-video ul
+		{
+			min-width: 50px;
+		}
+		.ip-tap-tin
+		{
+			width: 100%;
+			border: 1px solid #959595;
+			border-radius: 5px;
+		}
+		.btn-tai-len
+		{
+			width: 100%;
+		}
+		/*end upload video*/
+	
+}
+/*-------------------end trung bình-----------------*/
+
+
+
+
+/*-------------------nhỏ-----------------*/
+
+@media only screen and (max-width: 350px) and (min-width: 320px)
+{
+	html{
+				font-size: 12px;
+		}
+		.div-img-reply-cmt,
+		.div-img-reply-cmt img
+		{
+			width: 30px;
+			height: 30px;
+		}
+		.div-img-cmt,
+		.div-cmt img
+		{
+			width: 35px;
+			height: 35px;
+		}
+	.ip-repply-cmt
+		{
+			padding-top: 0.125rem;
+			padding-bottom: 0.125rem;
+		}
+	.avata
+		{
+			bottom: 5px;
+			left: 5px;
+		}
+	.div-name
+		{
+			padding-top: 1.250rem;
+		}
+
+
+		/*header*/
+	.logo-little
+		{
+			
+			width: 80%;
+			padding-top: 5px;
+		}
+	.div-logo
+		{
+			text-align: center;
+		}
+	.div-ngon-ngu
+		{
+			position: relative;
+		}
+
+
+	.div-ngon-ngu .dropdown
+		{
+			width: 100%;
+			position: absolute;
+		}
+	#header .div-tt-user
+		{
+			width: 30.33333333%;
+		}
+	#header .div-tt-user .tt-user a,
+	#header .div-tt-user .tt-user span
+		{
+			font-size: 0.750rem;
+		}	
+	#header .div-ngon-ngu
+		{
+			padding-left: 0px;
+			padding-right: 0px;
+			width: 21.66666667%;
+		}
+	#header .div-ngon-ngu a
+		{
+			font-size: 0.750rem;
+		}	
+	#header .div-login-acount
+		{
+			width: 39.66666667%;
+			padding-left: 0px;
+			padding-right: 5px;
+		}
+	#header .div-login-acount a
+		{
+			font-size: 0.750rem;
+		}
+		/*end herder*/
+
+
+		/*header1*/
+		.ip-search
+		{
+			width: 60%;
+			height: 20px;
+			margin-right: 5px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		.btn-search
+		{
+			padding: 2px 10px;
+		}
+		/*end header1*/
+		/* đăng nhập */
+		.btn-around
+		{
+		    border: 1px solid #959595;
+		    background-color: #0d7747;
+		    /*padding: 2px 25px 2px 0rem;*/
+		    padding: 2px 0px;
+		    width: 60%;
+		}
+		.btn-around img
+		{
+		    width: 25px; 
+		    height: 25px;
+		    margin-left: 5px;
+		}
+		.btn-dang-nhap
+		{
+			/*padding:5px 63px;*/
+			width: 60%;
+			padding: 7px 0px;
+		}
+		/*end đăng nhập*/
+		/*upload video*/
+		#upload-video
+		{
+			width: 72%;
+			padding: 50px 0px;
+		}
+			#upload-video .dropdown
+		{
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding: 3px 5px 3px 5px;
+		}
+		#upload-video ul
+		{
+			min-width: 50px;
+		}
+		.ip-tap-tin
+		{
+			width: 100%;
+			border: 1px solid #959595;
+			border-radius: 5px;
+			padding-right: 5px;
+		}
+		.btn-tai-len
+		{
+			width: 100%;
+		}
+		/*end upload video*/
+
+	
+}
+/*-------------------end nhỏ-----------------*/
